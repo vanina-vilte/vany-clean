@@ -1,0 +1,25 @@
+.page-banner {
+  background: var(--navy);
+  padding: 0.5% 0 50px;
+}
+
+.page-banner h1 {
+  color: var(--white);
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.page-banner p {
+  color: #dfe3f2;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.page-banner__underline {
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: var(--lime);
+  border-radius: 2px;
+  margin-top: 20px;
+}

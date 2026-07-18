@@ -1,0 +1,36 @@
+:root {
+  --navy: #080B42;
+  --blue: #22adf2;
+  --lime: #9ebf25;
+  --white: #ffffff;
+  --gray-bg: #f4f6fa;
+  --gray-text: #4a4f6a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  padding-top: 82px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
