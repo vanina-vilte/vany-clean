@@ -1,5 +1,7 @@
 package vaniclean.demo.contacto;
 
+import java.util.List;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,6 +9,8 @@ import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
+
+import vaniclean.demo.exception.ResourceNotFoundException;
 
 @Service
 @RequiredArgsConstructor
@@ -18,6 +22,16 @@ public class ContactoService {
 
     @Value("${app.mail.to}")
     private String destinatario;
+
+    // Lista todas las consultas recibidas por el formulario de contacto, para la vista de admin
+    public List<Contacto> getAll() {
+        return repository.findAllByOrderByCreadoEnDesc();
+    }
+
+    public Contacto getById(Long id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Consulta no encontrada con id: " + id));
+    }
 
     public Contacto guardar(ContactoRequest request) {
         Contacto contacto = new Contacto();
