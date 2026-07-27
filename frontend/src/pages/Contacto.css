@@ -235,10 +235,11 @@
   padding: 0 0 100px;
 }
 
-.contacto-cta__inner {
+.contacto-cta__inner.contacto-cta__inner {
   background: var(--gray-bg);
-  border-radius: 14px;
-  padding: 30px 40px;
+  border-radius: 18px;
+  padding: 56px 56px;
+  min-height: 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -249,13 +250,13 @@
 .contacto-cta__text {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
 }
 
 .contacto-cta__icon {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
   border-radius: 50%;
   border: 2px solid var(--blue);
   background: #e8f3fd;
@@ -263,13 +264,13 @@
 
 .contacto-cta__text strong {
   display: block;
-  font-size: 17px;
+  font-size: 21px;
   color: var(--navy);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .contacto-cta__text p {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--gray-text);
   margin: 0;
 }
@@ -279,7 +280,7 @@
   color: var(--white);
   font-weight: 700;
   font-size: 15px;
-  padding: 14px 26px;
+  padding: 16px 28px;
   border-radius: 8px;
   white-space: nowrap;
 }

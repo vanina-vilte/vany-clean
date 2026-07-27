@@ -112,7 +112,7 @@ function Contacto() {
               <span className="contacto__icon contacto__icon--square-blue" />
               <div>
                 <span className="contacto__label">Email</span>
-                <strong>vanina.vilte@gmail.com</strong>
+                <strong>vvilte@vanyclean.com.ar</strong>
                 <p>Respondemos a la brevedad.</p>
               </div>
             </div>

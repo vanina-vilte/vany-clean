@@ -213,10 +213,11 @@
   padding: 0 0 90px;
 }
 
-.servicios-cta__inner {
+.servicios-cta__inner.servicios-cta__inner {
   background: var(--navy);
-  border-radius: 14px;
-  padding: 36px 44px;
+  border-radius: 18px;
+  padding: 56px 56px;
+  min-height: 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,13 +228,13 @@
 .servicios-cta__text {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
 }
 
 .servicios-cta__icon {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
   border-radius: 50%;
   border: 2px solid var(--lime);
 }
@@ -241,13 +242,13 @@
 .servicios-cta__text strong {
   display: block;
   color: var(--white);
-  font-size: 19px;
-  margin-bottom: 4px;
+  font-size: 23px;
+  margin-bottom: 8px;
 }
 
 .servicios-cta__text p {
   color: #cfd3e8;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -257,7 +258,7 @@
 }
 
 .btn {
-  padding: 12px 22px;
+  padding: 16px 28px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 15px;

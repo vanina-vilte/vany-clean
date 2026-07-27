@@ -1,11 +1,16 @@
 import PageBanner from './PageBanner'
+import oficinaNosotros from '../assets/images/oficina-nosotros.png'
+import calendarIcon from '../assets/images/calendar.svg'
+import businessIcon from '../assets/images/business.svg'
+import protocoloIcon from '../assets/images/protocolo.svg'
+import equipoIcon from '../assets/images/equipo.svg'
 import './Nosotros.css'
 
 const STATS = [
-  { title: '+25 años', text: 'de experiencia' },
-  { title: 'Empresas y espacios', text: 'de trabajo' },
-  { title: 'Protocolos seguros', text: 'y eficientes' },
-  { title: 'Equipo capacitado', text: 'y comprometido' },
+  { title: '+25 años', text: 'de experiencia', icon: calendarIcon },
+  { title: 'Empresas y espacios', text: 'de trabajo', icon: businessIcon },
+  { title: 'Protocolos seguros', text: 'y eficientes', icon: protocoloIcon },
+  { title: 'Equipo capacitado', text: 'y comprometido', icon: equipoIcon },
 ]
 
 const VALORES = [
@@ -26,7 +31,7 @@ function Nosotros() {
 
       <div className="container nosotros__grid">
         <div className="nosotros__image">
-          <span className="nosotros__image-placeholder">Foto: equipo de limpieza en oficina</span>
+          <img src={oficinaNosotros} alt="Equipo de Vany Clean en una oficina" />
         </div>
 
         <div className="nosotros__content">
@@ -48,7 +53,9 @@ function Nosotros() {
           <div className="nosotros__stats">
             {STATS.map((s) => (
               <div className="nosotros__stat" key={s.title}>
-                <span className="nosotros__stat-icon" />
+                <span className="nosotros__stat-icon">
+                  <img src={s.icon} alt="" />
+                </span>
                 <div>
                   <strong>{s.title}</strong>
                   <p>{s.text}</p>
