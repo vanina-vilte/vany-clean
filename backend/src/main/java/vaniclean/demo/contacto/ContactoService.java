@@ -33,6 +33,19 @@ public class ContactoService {
                 .orElseThrow(() -> new ResourceNotFoundException("Consulta no encontrada con id: " + id));
     }
 
+    public Contacto actualizarEstado(Long id, EstadoContacto estado) {
+        Contacto contacto = getById(id);
+        contacto.setEstado(estado);
+        return repository.save(contacto);
+    }
+
+    public void eliminar(Long id) {
+        if (!repository.existsById(id)) {
+            throw new ResourceNotFoundException("Consulta no encontrada con id: " + id);
+        }
+        repository.deleteById(id);
+    }
+
     public Contacto guardar(ContactoRequest request) {
         Contacto contacto = new Contacto();
         contacto.setNombre(request.nombre());
