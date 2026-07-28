@@ -83,3 +83,41 @@
   color: var(--gray-text);
   max-width: 620px;
 }
+
+@media (max-width: 1000px) {
+  .whyus__grid {
+    grid-template-columns: 1fr;
+    gap: 90px 0;
+  }
+
+  .whyus__image {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .whyus {
+    padding: 20px 0 60px;
+  }
+
+  .whyus__grid {
+    gap: 70px 0;
+  }
+
+  .whyus__badge {
+    right: 12px;
+    bottom: -34px;
+    width: 190px;
+    padding: 16px 18px;
+  }
+
+  .whyus__content h2 {
+    font-size: 26px;
+  }
+
+  .whyus__content p {
+    font-size: 15px;
+  }
+}

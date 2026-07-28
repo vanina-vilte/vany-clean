@@ -316,7 +316,36 @@
 }
 
 @media (max-width: 600px) {
+  .contacto {
+    padding: 50px 0 60px;
+  }
+
   .contacto__row {
     grid-template-columns: 1fr;
+  }
+
+  .contacto__form {
+    padding: 26px 22px;
+  }
+
+  .contacto__cobertura {
+    padding: 24px 22px;
+  }
+
+  .contacto-cta {
+    padding: 0 0 60px;
+  }
+
+  .contacto-cta__inner.contacto-cta__inner {
+    padding: 32px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contacto-cta__btn {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
   }
 }

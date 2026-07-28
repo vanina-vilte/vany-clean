@@ -42,3 +42,38 @@
   line-height: 1.6;
   max-width: 620px;
 }
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 560px;
+  }
+
+  .hero__title {
+    font-size: 42px;
+  }
+
+  .hero__subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: 480px;
+    background-position: 75% center;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+  }
+
+  .hero__eyebrow {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+}

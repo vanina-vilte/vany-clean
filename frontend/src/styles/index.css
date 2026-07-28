@@ -19,12 +19,33 @@ body {
   background: var(--white);
   padding-top: 82px;
   overflow-anchor: none;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 60px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    padding-top: 66px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
 }
 
 a {

@@ -45,3 +45,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 560px) {
+  .features {
+    padding: 50px 0 20px;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}

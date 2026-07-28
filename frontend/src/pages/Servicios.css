@@ -275,11 +275,51 @@
 }
 
 @media (max-width: 600px) {
+  .servicios {
+    padding: 40px 0 60px;
+  }
+
   .servicios__grid {
     grid-template-columns: 1fr;
   }
 
+  .porque {
+    padding: 60px 0 70px;
+  }
+
   .porque__grid {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .porque__item,
+  .porque__item:not(:first-child) {
+    padding: 0;
+    border-left: none;
+  }
+
+  .proceso {
+    padding: 20px 0 70px;
+  }
+
+  .servicios-cta {
+    padding: 0 0 60px;
+  }
+
+  .servicios-cta__inner.servicios-cta__inner {
+    padding: 32px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .servicios-cta__actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .servicios-cta__actions .btn {
+    white-space: normal;
+    text-align: center;
   }
 }

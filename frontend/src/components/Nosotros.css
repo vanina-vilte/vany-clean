@@ -137,11 +137,34 @@
 }
 
 @media (max-width: 900px) {
-  .nosotros__grid {
+  .container.nosotros__grid {
     grid-template-columns: 1fr;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .nosotros__image,
+  .nosotros__image img {
+    min-height: 320px;
   }
 
   .nosotros__valores-grid {
     grid-template-columns: 1fr;
+  }
+
+  .nosotros__valores {
+    padding: 10px 0 70px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nosotros__content h2 {
+    font-size: 26px;
+  }
+
+  .nosotros__stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
