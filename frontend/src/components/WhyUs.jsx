@@ -1,5 +1,5 @@
 import './WhyUs.css'
-import edificio from '../assets/images/edificio.png'
+import edificio from '../assets/images/edificio.webp'
 import aniosExpIcon from '../assets/images/anios-exp.svg'
 
 function WhyUs() {

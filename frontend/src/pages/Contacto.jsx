@@ -2,11 +2,11 @@ import { useState } from 'react'
 import PageBanner from '../components/PageBanner'
 import contTel from '../assets/images/cont-tel.svg'
 import contMail from '../assets/images/cont-mail.svg'
-import contMap from '../assets/images/cont-map.png'
+import contMap from '../assets/images/cont-map.webp'
 import atenPers from '../assets/images/aten-pers.svg'
 import './Contacto.css'
 
-const API_URL = 'http://localhost:8080/api/contactos'
+const API_URL = `${import.meta.env.VITE_API_URL || 'http://localhost:8080/api'}/contactos`
 
 const INITIAL_FORM = {
   nombre: '',

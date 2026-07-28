@@ -1,5 +1,5 @@
 import PageBanner from './PageBanner'
-import oficinaNosotros from '../assets/images/oficina-nosotros.png'
+import oficinaNosotros from '../assets/images/oficina-nosotros.webp'
 import calendarIcon from '../assets/images/calendar.svg'
 import businessIcon from '../assets/images/business.svg'
 import protocoloIcon from '../assets/images/protocolo.svg'

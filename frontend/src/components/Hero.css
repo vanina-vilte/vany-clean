@@ -2,7 +2,7 @@
   position: relative;
   min-height: 640px;
   background: linear-gradient(90deg, var(--navy) 45%, rgba(8, 11, 66, 0.55) 75%),
-    url('../assets/images/banner-home.png') center/cover no-repeat;
+    url('../assets/images/banner-home.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
 }
