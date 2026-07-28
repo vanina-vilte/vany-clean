@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import PageBanner from '../components/PageBanner'
+import contTel from '../assets/images/cont-tel.svg'
+import contMail from '../assets/images/cont-mail.svg'
+import contMap from '../assets/images/cont-map.png'
+import atenPers from '../assets/images/aten-pers.svg'
 import './Contacto.css'
 
 const API_URL = 'http://localhost:8080/api/contactos'
@@ -100,7 +104,9 @@ function Contacto() {
 
           <div className="contacto__info">
             <div className="contacto__card">
-              <span className="contacto__icon contacto__icon--square-blue" />
+              <span className="contacto__icon contacto__icon--square-blue">
+                <img src={contTel} alt="" />
+              </span>
               <div>
                 <span className="contacto__label">Teléfono</span>
                 <strong>11 6033-1521</strong>
@@ -109,29 +115,13 @@ function Contacto() {
             </div>
 
             <div className="contacto__card">
-              <span className="contacto__icon contacto__icon--square-blue" />
+              <span className="contacto__icon contacto__icon--square-blue">
+                <img src={contMail} alt="" />
+              </span>
               <div>
                 <span className="contacto__label">Email</span>
                 <strong>vvilte@vanyclean.com.ar</strong>
                 <p>Respondemos a la brevedad.</p>
-              </div>
-            </div>
-
-            <div className="contacto__card">
-              <span className="contacto__icon contacto__icon--pin-lime" />
-              <div>
-                <span className="contacto__label">Ubicación</span>
-                <strong>Buenos Aires, Argentina</strong>
-                <p>CABA y alrededores</p>
-              </div>
-            </div>
-
-            <div className="contacto__card">
-              <span className="contacto__icon contacto__icon--circle-lime" />
-              <div>
-                <span className="contacto__label">WhatsApp</span>
-                <strong>11 6033-1521</strong>
-                <p>Consultas rápidas y directas.</p>
               </div>
             </div>
 
@@ -142,7 +132,7 @@ function Contacto() {
                 <p>Brindamos servicios de limpieza profesional en CABA y zonas aledañas.</p>
               </div>
               <div className="contacto__map">
-                <span>Mapa: cobertura CABA</span>
+                <img src={contMap} alt="Mapa del área de cobertura en CABA" />
               </div>
             </div>
           </div>
@@ -152,7 +142,9 @@ function Contacto() {
       <section className="contacto-cta">
         <div className="container contacto-cta__inner">
           <div className="contacto-cta__text">
-            <span className="contacto-cta__icon" />
+            <span className="contacto-cta__icon">
+              <span className="contacto-cta__icon-mask" style={{ WebkitMaskImage: `url(${atenPers})`, maskImage: `url(${atenPers})` }} />
+            </span>
             <div>
               <strong>¿Tenés dudas o necesitás un servicio personalizado?</strong>
               <p>Nuestro equipo está listo para asesorarte y ofrecerte una propuesta a medida.</p>
