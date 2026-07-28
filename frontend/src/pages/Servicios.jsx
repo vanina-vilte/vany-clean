@@ -14,6 +14,7 @@ import produCalidad from '../assets/images/produ-calidad.svg'
 import supervEfic from '../assets/images/superv-efic.svg'
 import atenPers from '../assets/images/aten-pers.svg'
 import listoIcon from '../assets/images/listo.svg'
+import usePageMeta from '../hooks/usePageMeta'
 import './Servicios.css'
 
 const SERVICIOS = [
@@ -38,6 +39,11 @@ const RAZONES = [
 ]
 
 function Servicios() {
+  usePageMeta(
+    'Servicios de Limpieza para Empresas | Vany Clean',
+    'Limpieza de oficinas, consorcios, área de salud, concesionarias y estacionamientos en CABA y alrededores. Servicios profesionales adaptados a cada espacio.'
+  )
+
   return (
     <>
       <PageBanner title="Servicios" subtitle="Soluciones de limpieza y mantenimiento adaptadas a cada espacio." />

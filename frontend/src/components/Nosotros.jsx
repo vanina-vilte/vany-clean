@@ -4,6 +4,7 @@ import calendarIcon from '../assets/images/calendar.svg'
 import businessIcon from '../assets/images/business.svg'
 import protocoloIcon from '../assets/images/protocolo.svg'
 import equipoIcon from '../assets/images/equipo.svg'
+import usePageMeta from '../hooks/usePageMeta'
 import './Nosotros.css'
 
 const STATS = [
@@ -25,6 +26,11 @@ const VALORES = [
 ]
 
 function Nosotros() {
+  usePageMeta(
+    'Nosotros | Vany Clean - Más de 25 Años de Experiencia',
+    'Conocé la historia de Vany Clean: más de 25 años de experiencia en limpieza y maestranza, personal capacitado y compromiso con la calidad en cada servicio.'
+  )
+
   return (
     <section className="nosotros">
       <PageBanner title="Nosotros" subtitle="Compromiso, experiencia y calidad en cada servicio." />
