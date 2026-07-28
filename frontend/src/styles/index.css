@@ -18,6 +18,7 @@ body {
   color: var(--navy);
   background: var(--white);
   padding-top: 82px;
+  overflow-anchor: none;
 }
 
 .container {
